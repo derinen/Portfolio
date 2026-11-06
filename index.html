@@ -1,10 +1,11 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A curated collection of Derin Enhos's undergraduate and sixth-form work across architecture, visual arts, and engineering.">
-  <title>Derin Enhos — Selected Work</title>
+  <meta name="description" content="Derin Enhoş is an MSc Construction Economics and Management student at UCL, exploring the commercial and strategic side of the built environment.">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Derin Enhoş — Construction Economics &amp; Management</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,9 +15,10 @@
   <header class="site-header">
     <a class="wordmark" href="#home">DE<span>.</span></a>
     <nav aria-label="Main navigation">
-      <a href="#introduction">Introduction</a>
+      <a href="#introduction">About</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#skills">Skills &amp; Experience</a>
+      <a href="#ib-work">IB Work</a>
+      <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -24,24 +26,22 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-kicker"><span class="dot"></span> SELECTED WORK · 2018—2025</div>
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">A PERSONAL ARCHIVE</p>
-          <h1>DERIN<br><em>ENHOS</em></h1>
+          <h1>DERIN<br><em>ENHOŞ</em></h1>
         </div>
         <div class="hero-note">
           <p>A curated collection of my undergraduate and sixth-form work across architecture, visual arts, and engineering.</p>
           <a class="text-link" href="#portfolio">Explore portfolio <span>↗</span></a>
         </div>
       </div>
-      <div class="hero-art" aria-label="Decorative abstract composition">
-        <div class="art-shape shape-one"></div>
-        <div class="art-shape shape-two"></div>
-        <div class="art-shape shape-three"></div>
-        <div class="art-label">FORM / MATERIAL / IDEAS<br>ARCHIVE Nº 01</div>
+      <div class="hero-art">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/hero-collage-mobile.jpg">
+          <img class="hero-photo" src="assets/hero-collage.jpg" alt="Five-photo collage of UCL campus, graduation, a workshop, and a park">
+        </picture>
       </div>
-      <div class="hero-bottom"><span>LONDON, UK</span><span>ARCHITECTURE · ART · ENGINEERING</span><span>SCROLL TO EXPLORE ↓</span></div>
+      <div class="hero-bottom"><a href="#introduction">SCROLL TO EXPLORE ↓</a></div>
     </section>
 
     <section class="section intro-section" id="introduction">
@@ -49,10 +49,10 @@
       <div class="intro-layout">
         <p class="display-copy">A little about<br><em>where I'm coming from.</em></p>
         <div class="body-copy">
-          <p>Hello, I'm Derin Enhos, an MSc Construction Economics and Management student at University College London (UCL), with a BArch in Architecture from the University of Nottingham.</p>
+          <p>Hello, I'm Derin Enhoş, an MSc Construction Economics and Management student at University College London (UCL), with a BArch in Architecture from the University of Nottingham.</p>
           <p>My interests lie in the commercial, economic and strategic aspects of the construction industry, particularly construction and project management, quantity surveying and consultancy. I am fascinated by construction economics, market dynamics and the business decisions shaping the industry. While my undergraduate background is in Architecture, my career interests are firmly focused on the management and commercial side of construction rather than architectural design.</p>
           <p>Through internships in the UK, Turkey and the UAE, I've gained experience across architectural design, interior design, engineering and marketing.</p>
-          <p>Alongside my studies, I am a Sustainability Ambassador for UCL's BSSC Green Impact Builders. I'm passionate about weightlifting, windsurfing and gymnastics, and am a member of the UCL Gymnastics Team where I compete nationally against other univeristies. I also am a personal trainer holding a Level 3 Diploma from PureGym.</p>
+          <p>Alongside my studies, I am a Sustainability Ambassador for UCL's BSSC Green Impact Builders. I'm passionate about weightlifting, windsurfing and gymnastics, and am a member of the UCL Gymnastics Team where I compete nationally against other universities. I also am a personal trainer holding a Level 3 Diploma from PureGym.</p>
           <p>Having lived and studied internationally, I value diverse perspectives and enjoy connecting with people from different backgrounds. I'm always open to new opportunities, collaborations and conversations within the industry.</p>
         </div>
       </div>
@@ -61,92 +61,244 @@
     <section class="section portfolio-section" id="portfolio">
       <div class="section-heading"><span>02 / PORTFOLIO</span><span class="heading-rule"></span><span>01—06</span></div>
       <div class="portfolio-intro">
-        <h2>Selected <em>work.</em></h2>
-        <p>A collection of projects, experiments and explorations across different stages of my education.</p>
+        <h2 class="portfolio-title">Portfolio</h2>
       </div>
       <div class="project-grid">
-        <article class="project-card project-wide">
-          <a class="project-image placeholder img-01" href="#" aria-label="Add Year 1 portfolio cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · YEAR 1 PORTFOLIO</span><span class="image-index">01</span>
-          </a>
+        <article class="project-card">
+          <div class="project-image">
+            <img class="project-cover" src="assets/project-01-year-1-cover.png" alt="Rendered Year 1 architecture project: a geometric skatepark design">
+            <span class="image-index">01</span>
+          </div>
           <div class="project-meta"><span>01 / ARCHITECTURE</span><span>UNDERGRADUATE</span></div>
-          <h3>YEAR 1 — UoN BArch</h3>
-          <p>A curated selection of architectural design projects from undergraduate studies. Features concept development, design solutions, and visual representations of built and unbuilt projects. Showcases problem-solving skills and spatial design innovation.</p>
-          <a class="text-link file-link" href="#" aria-label="Add Year 1 portfolio PDF">Click to download portfolio below! ↗</a>
+          <h3>YEAR 1 - UoN BArch</h3>
+          <p>A first-year architecture portfolio featuring a Nottingham Youth Hub proposal and a conceptual study exploring music, light and form. It brings together hand-drawn site analysis, plans, sections and elevations, client research, concept sketches, design iterations and physical models, alongside a Schroder House study, Broad Museum façade experimentation, Royal Festival Hall analysis and technical window drawings.</p>
+          <a class="project-download" href="assets/project-01-year-1.pdf" download>Download portfolio PDF <span>↓</span></a>
         </article>
 
         <article class="project-card">
-          <a class="project-image placeholder img-02" href="#" aria-label="Add Year 2 portfolio cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · YEAR 2 PORTFOLIO</span><span class="image-index">02</span>
-          </a>
+          <div class="project-image">
+            <img class="project-cover" src="assets/project-02-year-2-cover.png" alt="Rendered view of the Year 2 community residence and market project">
+            <span class="image-index">02</span>
+          </div>
           <div class="project-meta"><span>02 / ARCHITECTURE</span><span>UNDERGRADUATE</span></div>
           <h3>YEAR 2 — UoN BArch</h3>
           <p>A Year 2 architecture portfolio exploring three projects: the refurbishment of Malesa Daycare, modular preschool construction in South Africa, and a community residence with market. The portfolio presents site analysis, design development, timber-frame and post-and-beam construction research, plans, sections, elevations, rendered views, SketchUp models, and tectonic studies.</p>
-          <a class="text-link file-link" href="#">Click to download portfolio below! ↗</a>
+          <a class="project-download" href="assets/project-02-year-2.pdf" download>Download portfolio PDF <span>↓</span></a>
         </article>
 
         <article class="project-card">
-          <a class="project-image placeholder img-03" href="#" aria-label="Add sustainable housing project cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · SUSTAINABLE HOUSING</span><span class="image-index">03</span>
-          </a>
-          <div class="project-meta"><span>03 / SUSTAINABILITY</span><span>DESIGN RESEARCH</span></div>
-          <h3>Sustainable Urban Housing Module</h3>
-          <p>A detailed exploration of modular housing solutions aimed at sustainable urban living. This project emphasizes efficient design, material resourcefulness, and adaptability for diverse community needs. Showcases research into eco-friendly construction.</p>
+          <div class="project-image placeholder img-03" role="img" aria-label="Year 3 architecture portfolio cover image to be added">
+            <span class="placeholder-note">PROJECT IMAGE TO BE ADDED</span><span class="image-index">03</span>
+          </div>
+          <div class="project-meta"><span>03 / ARCHITECTURE</span><span>UNDERGRADUATE</span></div>
+          <h3>YEAR 3 — UoN BArch</h3>
+          <p>A compilation of my third-year undergraduate architecture work at the University of Nottingham, bringing together the projects, research and design development from my final year.</p>
+          <span class="project-status">Portfolio compilation in progress</span>
         </article>
 
         <article class="project-card">
-          <a class="project-image placeholder img-04" href="#" aria-label="Add internships portfolio cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · INTERNSHIPS</span><span class="image-index">04</span>
-          </a>
+          <div class="project-image">
+            <img class="project-cover" src="assets/project-04-internships-cover.png" alt="Rendered view of a contemporary architectural design developed during an internship">
+            <span class="image-index">04</span>
+          </div>
           <div class="project-meta"><span>04 / PROFESSIONAL EXPERIENCE</span><span>UK · TURKEY · UAE</span></div>
           <h3>INTERNSHIPS</h3>
-          <p>A portfolio documenting architectural and interior design internships in Istanbul, London, and Dubai, including design development, AutoCAD, SketchUp, floor plans, and client-focused project work.</p>
-          <a class="text-link file-link" href="#">Click to download portfolio below! ↗</a>
+          <p>A portfolio documenting architectural and interior design internships in Istanbul, London, and Dubai. It brings together design development, AutoCAD drafting, SketchUp modelling, floor-plan production, and client-focused project work across international practice settings.</p>
+          <a class="project-download" href="assets/project-04-internships.pdf" download>Download portfolio PDF <span>↓</span></a>
         </article>
 
         <article class="project-card">
-          <a class="project-image placeholder img-05" href="#" aria-label="Add environmental performance study cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · ENVIRONMENTAL STUDY</span><span class="image-index">05</span>
-          </a>
+          <div class="project-image">
+            <img class="project-cover" src="assets/project-05-environmental-performance-cover.png" alt="Thermal-bridge diagram and heat-loss calculations for a residential roof and ceiling retrofit">
+            <span class="image-index">05</span>
+          </div>
           <div class="project-meta"><span>05 / ENGINEERING</span><span>PERFORMANCE STUDY</span></div>
           <h3>ENVIRONMENTAL PERFORMANCE STUDY</h3>
-          <p>A residential retrofit study evaluating an existing home's environmental performance before and after improvements. The analysis explores heat loss, energy demand, ventilation and carbon emissions, assessing the impact of improved insulation, glazing, airtightness and a 90% efficient MVHR system.</p>
-          <a class="text-link file-link" href="#">Click to download both reports below! ↗</a>
+          <p>An environmental performance study in two parts: Report 1 assesses the existing home’s fabric U-values, heat loss, glazing, ventilation and energy demand. Report 2 develops and evaluates retrofit measures—including improved insulation, reduced window area and ventilation upgrades—then compares the home’s modelled heat loss and energy demand before and after the improvements.</p>
+          <div class="project-downloads">
+            <a class="project-download" href="assets/project-05-report-1-current-analysis.pdf" download="Environmental-Performance-Report-1-Current-Analysis.pdf">Download Report 1 — Current Analysis <span>↓</span></a>
+            <a class="project-download" href="assets/project-05-report-2-retrofit-calculations.pdf" download="Environmental-Performance-Report-2-Retrofit-Calculations.pdf">Download Report 2 — Retrofit Calculations <span>↓</span></a>
+          </div>
         </article>
 
         <article class="project-card">
-          <a class="project-image placeholder img-06" href="#" aria-label="Add visual arts portfolio cover image">
-            <span class="placeholder-note">IMAGE PLACEHOLDER · VISUAL ARTS</span><span class="image-index">06</span>
-          </a>
+          <div class="project-image">
+            <img class="project-cover" src="assets/project-06-visual-arts-cover.png" alt="Two colorful close-up painted portraits from the pre-university visual arts portfolio">
+            <span class="image-index">06</span>
+          </div>
           <div class="project-meta"><span>06 / VISUAL ARTS</span><span>GCSE—IB</span></div>
           <h3>PRE-UNIVERSITY VISUAL ARTS</h3>
           <p>A pre-university visual arts portfolio developed from GCSE through the International Baccalaureate. It explores organic forms, portraiture, still life, spatial awareness, graphic experimentation, architectural photography, 3D relief, mixed media, charcoal, acrylic, oil paint, watercolour, photography, Photoshop, lino print, clay, cardboard, and plaster.</p>
-          <a class="text-link file-link" href="#">Click to download portfolio below! ↗</a>
+          <a class="project-download" href="assets/project-06-visual-arts.pdf" download>Download portfolio PDF <span>↓</span></a>
         </article>
       </div>
-      <p class="portfolio-footnote">PROJECT IMAGES &amp; PDF LINKS TO BE ADDED</p>
     </section>
 
-    <section class="section skills-section" id="skills">
-      <div class="section-heading"><span>03 / SKILLS &amp; EXPERIENCE</span><span class="heading-rule"></span></div>
-      <h2>Things I have<br><em>learned & explored.</em></h2>
-      <div class="skills-grid">
-        <article><span class="skill-number">01</span><h3>Technical Skills</h3><p>Proficiency in AutoCAD, Revit, and Rhino 3D for structural modeling and architectural visualization. Expertise in material analysis and structural geometry.</p></article>
-        <article><span class="skill-number">02</span><h3>Creative Direction</h3><p>Strategic leadership in architectural design and fine art exhibitions. Developed a strong visual narrative and aesthetic presentation for international projects.</p></article>
-        <article><span class="skill-number">03</span><h3>IB Art Exhibition</h3><p>Curated and exhibited a comprehensive portfolio of fine art and architectural sketches at JESS during the IB program. Bridging cultural perspectives.</p></article>
+    <section class="section ib-section" id="ib-work">
+      <div class="section-heading"><span>03 / IB ART &amp; EXTENDED ESSAY</span><span class="heading-rule"></span></div>
+      <div class="ib-intro">
+        <h2>IB Art Exhibition<br><em>&amp; Extended Essay.</em></h2>
+        <p>Two connected projects from my International Baccalaureate Diploma: a research essay on the Şakirin Mosque and an art exhibition translating those ideas into visual form.</p>
+      </div>
+      <div class="ib-projects">
+        <article class="ib-project">
+          <span class="ib-project-number">01 / RESEARCH</span>
+          <h3>Extended Essay</h3>
+          <p class="ib-essay-title">Traces of the “Bauhaus” in the Şakirin Mosque</p>
+          <p>My 3,727-word IB Diploma research essay investigates the relationship between modernist principles and cultural identity in contemporary religious architecture.</p>
+          <blockquote>“To what extent does the Şakirin Mosque follow the Bauhaus philosophy of ‘form follows function’?”</blockquote>
+          <a class="project-download" href="assets/ee-derin-enhos.pdf" download="Derin-Enhos-Extended-Essay.pdf">Download Extended Essay PDF <span>↓</span></a>
+        </article>
+        <article class="ib-project">
+          <span class="ib-project-number">02 / VISUAL ARTS</span>
+          <h3>IB Art Exhibition</h3>
+          <p>Inspired by visits to Istanbul’s Blue Mosque and Şakirin Mosque, the exhibition explores the contrast between traditional architecture and the perceived sameness of modern design. Illusion-like architectural artworks express my unease at the loss of cultural identity.</p>
+          <p>Using oil paint, monochrome, charcoal, lino printing and plaster, I explored repetition through print and 3D relief. In <em>Traces of Islam in the Şakirin</em>, painted fragments of the mosque connect the visual work directly to my essay research.</p>
+        </article>
+      </div>
+      <div class="ib-gallery-heading">
+        <span class="ib-project-number">SELECTED WORKS</span>
+        <p>Studies, finished pieces and moments from the exhibition. Select an image to view it full size.</p>
+      </div>
+      <div class="ib-gallery">
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-01-painted-architecture.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: painted architectural composition">
+            <img src="assets/exhibition-01-painted-architecture.png" alt="Colorful painted architectural composition combining mosque-inspired forms and geometric spaces" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>01</span> Painted architectural composition</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-02-graphite-study.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: graphite architectural study">
+            <img src="assets/exhibition-02-graphite-study.png" alt="Graphite study of an imagined architectural composition" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>02</span> Graphite study</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-03-lino-print.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: black and white architectural lino print">
+            <img src="assets/exhibition-03-lino-print.png" alt="High-contrast black and white architectural lino print with repeating lines and forms" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>03</span> Lino print</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-04-painted-detail.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: close detail of a painted architectural work">
+            <img src="assets/exhibition-04-painted-detail.png" alt="Close detail of a colorful architectural painting with layered blue and pink forms" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>04</span> Painted detail</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-05-line-drawing.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: architectural line drawing">
+            <img src="assets/exhibition-05-line-drawing.png" alt="Loose black-line drawing exploring an architectural interior and perspective" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>05</span> Line drawing</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-06-framed-pencil-study.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: framed pencil study">
+            <img src="assets/exhibition-06-framed-pencil-study.png" alt="Framed pencil drawing of a layered architectural composition" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>06</span> Framed pencil study</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-07-painted-detail.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: painted architectural detail">
+            <img src="assets/exhibition-07-painted-detail.png" alt="Close-up of a blue and pink architectural painting with a receding passage" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>07</span> Painted detail</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-08-painted-study.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: painted study of an architectural interior">
+            <img src="assets/exhibition-08-painted-study.png" alt="Painted study of a geometric interior with a circular pool and layered structures" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>08</span> Painted study</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-09-gallery-installation.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: exhibition wall installation">
+            <img src="assets/exhibition-09-gallery-installation.png" alt="A row of architectural artworks displayed on a white gallery wall" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>09</span> Exhibition installation</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-10-finished-painting.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: finished architectural painting">
+            <img src="assets/exhibition-10-finished-painting.png" alt="Finished painting of layered mosque-inspired architecture in blue, pink and charcoal" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>10</span> Finished painting</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-11-painted-detail.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: close detail of a painted architectural work">
+            <img src="assets/exhibition-11-painted-detail.png" alt="Close detail of a colorful architectural painting with a receding passage" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>11</span> Painted detail</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-12-charcoal-study.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: charcoal architectural study">
+            <img src="assets/exhibition-12-charcoal-study.png" alt="Charcoal drawing of a dense architectural composition with arches and deep shadows" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>12</span> Charcoal study</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-13-framed-artwork.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: framed pair of painted studies">
+            <img src="assets/exhibition-13-framed-artwork.png" alt="Two small colorful architectural paintings displayed in black frames" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>13</span> Framed studies</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-14-plaster-relief.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: white plaster relief">
+            <img src="assets/exhibition-14-plaster-relief.png" alt="White-on-white plaster relief with incised architectural lines and textures" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>14</span> Plaster relief</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-15-exhibition-view.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: gallery view of the exhibition">
+            <img src="assets/exhibition-15-exhibition-view.png" alt="Gallery view showing a large colorful architectural painting alongside a small study" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>15</span> Exhibition view</figcaption>
+        </figure>
+        <figure class="ib-gallery-item">
+          <a class="ib-gallery-link" href="assets/exhibition-16-finished-composition.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size image: finished architectural composition">
+            <img src="assets/exhibition-16-finished-composition.png" alt="Finished architectural composition painted on a muted green ground" loading="lazy">
+            <span>VIEW FULL IMAGE ↗</span>
+          </a>
+          <figcaption><span>16</span> Finished composition</figcaption>
+        </figure>
+      </div>
+      <p class="ib-connection"><span>THE CONNECTION</span>The essay examines the ideas; the exhibition makes them visible. Together, they consider how modern architecture can reshape—and sometimes obscure—a nation’s cultural identity.</p>
+    </section>
+
+    <section class="section cv-section" id="cv">
+      <div class="section-heading"><span>04 / CURRICULUM VITAE</span><span class="heading-rule"></span></div>
+      <div class="cv-content">
+        <h2>My CV,<br><em>at a glance.</em></h2>
+        <div class="cv-copy">
+          <p>A concise overview of my education, professional experience and skills across architecture and construction management.</p>
+          <a class="cv-download" href="assets/derin-enhos-cv.pdf" download="Derin-Enhos-CV.pdf">Download my CV <span>↓</span></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer id="contact">
-    <div class="footer-top"><span>HAVE A PROJECT OR JUST WANT TO SAY HELLO?</span><span>LET'S CONNECT ↗</span></div>
-    <div class="footer-main"><h2>DERIN<br><em>ENHOS</em></h2><a class="contact-link" href="mailto:hello@derinenhos.com">GET IN TOUCH ↗</a></div>
+    <div class="footer-main"><h2>DERIN<br><em>ENHOŞ</em></h2></div>
     <div class="footer-details">
-      <div><span class="footer-label">UAE ADDRESS</span><p>ARABIAN RANCHES 1, DUBAI, UAE</p></div>
-      <div><span class="footer-label">UK ADDRESS</span><p>KINGS CROSS, LONDON, UK, N1 9JP</p></div>
-      <div><span class="footer-label">ELSEWHERE</span><p><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></p></div>
+      <div><span class="footer-label">BASED BETWEEN</span><p>LONDON · DUBAI</p></div>
+      <div><span class="footer-label">CURRENTLY</span><p>UCL · MSc CONSTRUCTION ECONOMICS &amp; MANAGEMENT</p></div>
+      <div><span class="footer-label">EMAIL</span><p><a href="mailto:enhosderin@gmail.com">enhosderin@gmail.com</a></p></div>
+      <div class="footer-social"><span class="footer-label">LINKEDIN</span><p><a href="https://www.linkedin.com/in/derin-enhos-profile" target="_blank" rel="noopener noreferrer">VIEW PROFILE ↗</a></p></div>
+      <div class="footer-social"><span class="footer-label">FACEBOOK</span><p><a href="https://www.facebook.com/derinenhos" target="_blank" rel="noopener noreferrer">VIEW PROFILE ↗</a></p></div>
     </div>
-    <div class="copyright"><span>© DERIN ENHOS</span><span>PERSONAL ARCHIVE / 2025</span><a href="#home">BACK TO TOP ↑</a></div>
+    <div class="copyright"><span>© DERIN ENHOŞ</span><a href="#home">BACK TO TOP ↑</a></div>
   </footer>
   <script src="script.js"></script>
 </body>

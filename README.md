@@ -1,12 +1,12 @@
-# Derin Enhos — portfolio website base
+# Derin Enhos — portfolio
 
-This is a first-pass static website base for GitHub Pages.
+Personal portfolio for Derin Enhos, focused on construction economics and management. The site is a static website and can be published with GitHub Pages.
 
 ## Files
 - `index.html` — page content and structure
-- `styles.css` — responsive pastel pink / grey / white editorial styling
-- `script.js` — small mobile navigation interaction
-- `assets/` — add project cover images and portfolio PDFs here
+- `styles.css` — responsive editorial styling
+- `script.js` — mobile navigation and scroll-triggered reveals
+- `assets/` — project cover images, portfolio PDFs, IB art exhibition gallery images, and the personal photos used in the hero collage
 
 ## Publish with GitHub Pages
 1. Create a new **public** GitHub repository, e.g. `derin-portfolio`.
@@ -15,14 +15,13 @@ This is a first-pass static website base for GitHub Pages.
 4. Under Build and deployment, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
 5. GitHub will provide the published site URL.
 
-## Add your original work later
-Replace the six `.placeholder` project image links in `index.html` with `<img>` elements pointing to your image files in `assets/`.
-Replace the `href="#"` PDF links with the relevant PDF paths, e.g. `assets/year-1-portfolio.pdf`.
+## Add your original work
+Projects 1, 2, and 4's cover images and PDFs are in `assets/`. Replace the remaining three project-image placeholders with your own images. Add the other project PDFs to `assets/` using these filenames so the download links work:
+
+- `project-03-sustainable-housing.pdf`
+- `project-05-environmental-performance.pdf`
+- `project-06-visual-arts.pdf`
 
 ## Before publishing
-- Replace the placeholder email address in the footer with the email address you want public.
-- Replace the generic LinkedIn URL with your actual profile URL.
-- Review whether you want your residential addresses displayed publicly. The original website included them; consider using city/country only or removing them for privacy.
-- Add the original cover images and downloadable portfolio PDFs.
-- Check the wording for typos (the source site spells "universities" as "univeristies").
-- The decorative hero artwork is CSS-based and can be replaced with a selected image or collage later.
+- Confirm `hello@derinenhos.com` is the email address you want public.
+- Add original project images and portfolio PDFs.
