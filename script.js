@@ -12,6 +12,27 @@ if (toggle && nav) {
   }));
 }
 
+const imageViewer = document.querySelector(".image-viewer");
+const imageViewerImage = imageViewer?.querySelector("img");
+const imageViewerClose = imageViewer?.querySelector(".image-viewer-close");
+
+document.querySelectorAll(".ib-gallery-link").forEach(link => {
+  link.addEventListener("click", event => {
+    const image = link.querySelector("img");
+    if (!image || !imageViewer || !imageViewerImage || typeof imageViewer.showModal !== "function") return;
+
+    event.preventDefault();
+    imageViewerImage.src = link.href;
+    imageViewerImage.alt = image.alt;
+    imageViewer.showModal();
+  });
+});
+
+imageViewerClose?.addEventListener("click", () => imageViewer?.close());
+imageViewer?.addEventListener("click", event => {
+  if (event.target === imageViewer) imageViewer.close();
+});
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const revealTargets = document.querySelectorAll(
