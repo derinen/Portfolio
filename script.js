@@ -15,22 +15,45 @@ if (toggle && nav) {
 const imageViewer = document.querySelector(".image-viewer");
 const imageViewerImage = imageViewer?.querySelector("img");
 const imageViewerClose = imageViewer?.querySelector(".image-viewer-close");
+let activeGalleryLink;
+let previousBodyOverflow;
+
+const closeImageViewer = () => {
+  if (!imageViewer || !imageViewerImage) return;
+  imageViewer.hidden = true;
+  imageViewerImage.src = "";
+  document.body.style.overflow = previousBodyOverflow;
+  activeGalleryLink?.focus();
+  activeGalleryLink = undefined;
+};
 
 document.querySelectorAll(".ib-gallery-link").forEach(link => {
   link.addEventListener("click", event => {
-    const image = link.querySelector("img");
-    if (!image || !imageViewer || !imageViewerImage || typeof imageViewer.showModal !== "function") return;
-
     event.preventDefault();
+    const image = link.querySelector("img");
+    if (!image || !imageViewer || !imageViewerImage || !imageViewerClose) return;
+
+    activeGalleryLink = link;
+    previousBodyOverflow = document.body.style.overflow;
     imageViewerImage.src = link.href;
     imageViewerImage.alt = image.alt;
-    imageViewer.showModal();
+    imageViewer.hidden = false;
+    document.body.style.overflow = "hidden";
+    imageViewerClose.focus();
   });
 });
 
-imageViewerClose?.addEventListener("click", () => imageViewer?.close());
+imageViewerClose?.addEventListener("click", closeImageViewer);
 imageViewer?.addEventListener("click", event => {
-  if (event.target === imageViewer) imageViewer.close();
+  if (event.target === imageViewer) closeImageViewer();
+});
+document.addEventListener("keydown", event => {
+  if (!imageViewer || imageViewer.hidden) return;
+  if (event.key === "Escape") closeImageViewer();
+  if (event.key === "Tab") {
+    event.preventDefault();
+    imageViewerClose?.focus();
+  }
 });
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
