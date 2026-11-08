@@ -59,7 +59,7 @@ document.addEventListener("keydown", event => {
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const revealTargets = document.querySelectorAll(
-    ".hero-grid, .hero-art, .hero-bottom, .section-heading, .intro-layout, .portfolio-intro, .project-card, .ib-intro, .ib-project, .ib-gallery-heading, .ib-gallery-item, .ib-connection, .footer-main, .footer-details, .copyright"
+    ".hero-grid, .hero-art, .hero-bottom, .section-heading, .intro-layout, .portfolio-intro, .project-card, .dubai-intro, .dubai-gallery-note, .ib-intro, .ib-project, .ib-gallery-heading, .ib-gallery-item, .ib-connection, .footer-main, .footer-details, .copyright"
   );
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {

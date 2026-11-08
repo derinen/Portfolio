@@ -82,6 +82,15 @@ h1 em,h2 em,.display-copy em,.footer-main em { color:#b98e9a; font-weight:400; }
 .project-downloads { display:flex;flex-wrap:wrap;gap:16px 22px; }
 .project-status { color:var(--muted);font-size:9px;font-style:italic;margin-top:auto;padding-top:5px; }
 .portfolio-footnote { text-align:center;color:#69736b;margin-top:70px; }
+.dubai-section { background:#f2e5e9; }
+.dubai-intro { display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:8vw;margin-top:55px; }
+.dubai-intro h2 { font-family:var(--serif);font-size:76px;font-weight:400;line-height:.98;margin:0; }
+.dubai-intro h2 em { color:#b98e9a;font-weight:400; }
+.dubai-copy { max-width:540px;color:#68636a;font-size:13px;line-height:1.9; }
+.dubai-copy p { margin:0 0 16px; }
+.dubai-gallery-note { display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-top:1px solid var(--line);margin-top:42px;padding-top:18px; }
+.dubai-gallery-note > span { color:#a45e73;font-size:9px;font-weight:600;letter-spacing:.08em; }
+.dubai-gallery-note > p { color:#68636a;font-size:11px;line-height:1.7;margin:0; }
 .ib-section { background:#fff; }
 .ib-intro { display:grid;grid-template-columns:1fr .85fr;align-items:end;gap:8vw;margin-top:55px; }
 .ib-intro h2 { font-size:64px;line-height:1.04;margin:0; }
@@ -153,6 +162,9 @@ footer { background:#fff;padding:55px 8vw 25px; }
   .portfolio-intro h2,.cv-content h2 {font-size:54px;}
   .portfolio-intro p {margin-top:18px;}
   .project-grid {grid-template-columns:1fr;gap:45px;}
+  .dubai-intro {grid-template-columns:1fr;gap:26px;margin-top:40px;}
+  .dubai-intro h2 {font-size:54px;}
+  .dubai-gallery-note {align-items:flex-start;flex-direction:column;gap:8px;}
   .ib-intro,.ib-projects {grid-template-columns:1fr;gap:30px;}
   .ib-gallery { grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px; }
   .ib-gallery-heading { align-items:flex-start;flex-direction:column;gap:8px; }
